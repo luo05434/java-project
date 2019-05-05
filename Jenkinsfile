@@ -10,7 +10,7 @@ node('linux'){
   }
   
   stage('deploy'){
-    sh 'aws S3 cp /workspace/java-pipeline/dist/rectangle-${BUILD_NUMBER}.jar s3://luo05434-hw10-jenkins-output/rectangle-4.jar'
+    sh 'aws s3 cp /workspace/java-pipeline/dist/rectangle-${BUILD_NUMBER}.jar s3://luo05434-hw10-jenkins-output/rectangle-4.jar'
     
   }
 }
